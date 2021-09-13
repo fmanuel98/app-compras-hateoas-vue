@@ -1,9 +1,7 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
-import Lista from '@/modules/produtos/routes/Index';
+import ProductModule from "@/modules/produtos/routes/Index";
 
-const routes: Array<RouteRecordRaw> = [
-  ...Lista,
-];
+const routes: Array<RouteRecordRaw> = [...ProductModule];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
